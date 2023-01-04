@@ -355,16 +355,15 @@
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
-                                                        'ID': i,
-                                                        'DATE': rec[0].trim(),
-                                                        'COUNTRY_CODE': rec[1].trim(),
-                                                        'COMPANY_CODE': rec[2].trim(),
-                                                        'TYPE': rec[3].trim(),
-                                                        'VALUE_DATE': rec[4].trim(),
-                                                        'AMOUNT': rec[5].trim().replace(/[,]/g, ""),
-                                                        'CURRENCY': rec[6].trim(),
-                                                        'COMMENTS': rec[7].trim().replace(/["'\n\r]/g, ""),
-                                                        'LOCK_FLAG': rec[8].trim(),
+                                                        'COLUMN1': rec[0].trim(),
+                                                        'COLUMN2': rec[1].trim(),
+                                                        'COLUMN3': rec[2].trim(),
+                                                        'COLUMN4': rec[3].trim(),
+                                                        'COLUMN5': rec[4].trim(),
+                                                        'COLUMN6': rec[5].trim(),
+                                                        'COLUMN7': rec[6].trim(),
+                                                        'COLUMN8': rec[7].trim(),
+                                                        'COLUMN9': rec[8].trim(),
                                                     });
                                                 }
                                             }
