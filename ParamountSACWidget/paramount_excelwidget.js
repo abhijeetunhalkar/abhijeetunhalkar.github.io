@@ -400,7 +400,9 @@
                                         var oModel = new JSONModel();
 
                                         console.log(result_final);
-                                      oModel.loadData("processData.xsjs", JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
+                                        /*SOC*/
+                                        oModel.loadData(file.name, JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
+                                      //oModel.loadData("processData.xsjs", JSON.stringify(result_final), true, 'POST', false, true, oHeaders);
 
                                         oModel.attachRequestCompleted(function() {
                                             var result = oModel.getData();
